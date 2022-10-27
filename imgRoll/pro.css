@@ -1,0 +1,17 @@
+.nivoSlider {   /*轮换图片的大小*/
+    position: relative;
+    width: 1200px;
+    height: 377px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.nivoSlider .slide{
+    width: 1200px;
+    height: 377px;
+    position: absolute;
+}
+.nivoSlider .slide img{
+    width: 1200px;
+    height: 377px;
+}
