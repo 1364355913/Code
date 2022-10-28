@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+  body .myhead {
+    background-color: #e3f15e;
+    text-align: center;
+    padding: 5px 0px 10px 0px;
+    width: 1200px;
+    margin: 0px auto 0px auto; }
+    body .myhead table {
+      margin: 0 auto 50px; }
+      body .myhead table #things {
+        width: 180px;
+        height: 30px;
+        border-radius: 3px;
+        outline: none;
+        border: solid 1px white; }
+      body .myhead table #add {
+        display: inline-block;
+        width: 80px;
+        height: 30px;
+        background-color: gainsboro;
+        color: grey;
+        border-radius: 3px;
+        line-height: 30px; }
+      body .myhead table #add:hover {
+        cursor: pointer;
+        background-color: darkgrey;
+        color: grey; }
+  body ul {
+    margin: 0px auto 50px;
+    padding: 0px;
+    width: 1200px; }
+    body ul .check {
+      background-color: #888888;
+      text-decoration: line-through;
+      color: #030303; }
+    body ul .check::before {
+      content: '';
+      position: absolute;
+      border-color: black;
+      border-style: solid;
+      border-width: 0 2px 2px 0;
+      top: 10px;
+      left: 16px;
+      transform: rotate(45deg);
+      height: 15px;
+      width: 7px; }
+    body ul li {
+      list-style: none;
+      position: relative;
+      padding-left: 40px;
+      height: 40px;
+      line-height: 40px;
+      overflow: hidden; }
+      body ul li .close {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        padding: 0px 20px;
+        font-size: 16px; }
+      body ul li .close:hover {
+        background-color: #f44336;
+        color: white; }
+    body ul li:nth-child(odd) {
+      background-color: #f9f9f9; }
+    body ul li:hover {
+      cursor: pointer;
+      background-color: #dddddd; }
+
+/*# sourceMappingURL=todolist.css.map */

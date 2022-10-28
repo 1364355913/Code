@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+   
+        box-sizing: border-box;
+        .myhead{
+            background-color: rgb(227, 241, 94);
+            text-align: center;
+            padding: 5px 0px 10px 0px;
+            width: 1200px;
+            margin: 0px auto 0px auto;
+
+            table{
+                margin: 0 auto 50px;
+
+                #things{
+                    width: 180px;
+                    height: 30px;
+                    border-radius: 3px;
+                    outline: none;
+                    border: solid 1px white;
+                }
+                #add{
+                    display: inline-block;
+                    width: 80px;
+                    height: 30px;
+                    background-color: gainsboro;
+                    color: grey;
+                    border-radius: 3px;
+                    line-height: 30px;
+                }
+                #add:hover{
+                    cursor: pointer;
+                    background-color:darkgrey ;
+                    color: grey;
+                  }
+                
+              }
+          }
+        ul{
+            margin: 0px auto 50px;
+            padding: 0px;
+            width: 1200px;
+            
+            .check{
+                    background-color: #888888;
+                    text-decoration: line-through;
+                    color: #030303;
+                }
+            .check::before{
+   
+                content: '';
+                position: absolute;
+                border-color: black;
+                border-style: solid;
+                border-width: 0 2px 2px 0;
+                top: 10px;
+                left: 16px;
+                transform: rotate(45deg);
+                height: 15px;
+                width: 7px;
+            }
+            li{
+                list-style: none;
+                position: relative;
+                padding-left:40px;
+                height: 40px;
+                line-height: 40px;
+                overflow: hidden;
+
+                .close{
+                    position: absolute;
+                    right: 0px;
+                    top: 0px;
+                    padding: 0px 20px;
+                    font-size: 16px;
+                  }
+                  .close:hover{
+                    background-color: #f44336;
+                    color: white;
+                  }
+
+                
+              }
+            li:nth-child(odd) {
+                background-color: #f9f9f9;
+            }
+            li:hover{
+                cursor: pointer;
+                background-color: #dddddd;
+              }
+        }
+      
+  }
