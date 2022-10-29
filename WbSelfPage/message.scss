@@ -1,0 +1,196 @@
+.container main {
+  .main-right {
+    .messages {
+      .message {
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+        border-radius: 2px;
+        background: #fff;
+        margin-bottom: 15px;
+        .message-core {
+          display: flex;
+          padding: 25px 28px 6px;
+          .avatar {
+            flex: none;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: url(./images/avatar.png) no-repeat center / contain;
+          }
+          .detail {
+            flex: 1;
+            margin-left: 15px;
+            .info {
+              display: flex;
+              align-items: center;
+              margin-bottom: 5px;
+              .username {
+                font-size: 14px;
+                color: #333333;
+                margin-right: 2px;
+              }
+
+              @each $icon in v-square, level, flag, panda, v-blue, level6 {
+                .#{$icon}-icon {
+                  width: 16px;
+                  height: 16px;
+                  background: url(./images/#{$icon}.png)
+                    no-repeat
+                    center /
+                    contain;
+                  margin-right: 4px;
+                }
+              }
+            }
+            .text {
+              margin-bottom: 3px;
+              font-size: 12px;
+              color: #808080;
+            }
+            .detail-core {
+              .text {
+                margin-bottom: 0;
+                line-height: 23px;
+                font-size: 14px;
+                color: #333333;
+                a {
+                  font-size: 14px;
+                  color: #eb7350;
+                  text-decoration: none;
+                }
+                .heart-icon {
+                  vertical-align: -4px;
+                  display: inline-block;
+                  width: 18px;
+                  height: 18px;
+                  background: url(./images/heart-3d.png) no-repeat center /
+                    contain;
+                }
+              }
+              .pic-list {
+                font-size: 0;
+                width: 350px;
+                img {
+                  width: 110px;
+                  height: 110px;
+                  margin: 5px 5px 0 0;
+                }
+              }
+              .fresh-news {
+                margin-top: 4px;
+                display: flex;
+                align-items: center;
+                .fresh-news-icon {
+                  width: 16px;
+                  height: 18px;
+                  margin-right: 6px;
+                  background: url(./images/fresh-news.png) no-repeat center /
+                    contain;
+                }
+                .text {
+                  margin-top: 2px;
+                  font-size: 12px;
+                  color: #eb7350;
+                  line-height: unset;
+                }
+              }
+            }
+            .repeat-message {
+              margin: 5px -28px -6px -80px;
+              padding: 9px 10px 8px 80px;
+              background: #f2f2f5;
+              font-size: 12px;
+              color: #333333;
+              .info {
+                display: flex;
+                align-items: center;
+              }
+              .repeat-core {
+                .repeat-text {
+                  line-height: 21px;
+                  a {
+                    color: #eb7350;
+                    text-decoration: none;
+                  }
+                  .heart-icon {
+                    vertical-align: -2px;
+                    display: inline-block;
+                    width: 14px;
+                    height: 14px;
+                    background: url(./images/heart.png) no-repeat center /
+                      contain;
+                  }
+                }
+                .pic {
+                  margin-top: 6px;
+                  font-size: 0;
+                  img {
+                    width: 167px;
+                    height: 223px;
+                  }
+                }
+                .addition {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  margin-top: 8px;
+                  .text {
+                    line-height: unset;
+                    font-size: 12px;
+                    color: #808080;
+                  }
+                  .message-option {
+                    height: fit-content;
+                    .item {
+                      width: 76px;
+                      height: 13px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .message-option {
+          height: 39px;
+          display: flex;
+          align-items: center;
+          border-top: 1px solid #f2f2f5;
+          .item {
+            flex: 1;
+            height: 22px;
+            border-right: 1px solid #d9d9d9;
+            &:last-child {
+              border: none;
+            }
+            > a {
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 11px;
+              color: #808080;
+              text-decoration: none;
+              &:hover {
+                color: #eb7350;
+              }
+            }
+            [class$="-icon"] {
+              margin-right: 5px;
+              width: 12px;
+              height: 12px;
+            }
+
+            @each $icon in star, share, repeat, praised {
+              .#{$icon}-icon {
+                background: url(./images/#{$icon}-line.png)
+                  no-repeat
+                  center /
+                  contain;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

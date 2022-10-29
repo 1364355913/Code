@@ -1,0 +1,103 @@
+.container main {
+  .main-right {
+    flex: 1;
+    .works {
+      box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+      border-radius: 2px;
+      background: #fff;
+      margin-bottom: 15px;
+      .title {
+        height: 39px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 500;
+        color: #333;
+        padding: 0 16px;
+      }
+      .work-list {
+        border-top: 1px solid #f2f2f5;
+        border-bottom: 1px solid #d9d9d9;
+        padding: 5px 6px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0;
+        .item {
+          display: flex;
+          .cover {
+            position: relative;
+            img {
+              width: 142px;
+              height: 142px;
+            }
+            .play-icon {
+              width: 26px;
+              height: 28px;
+              position: absolute;
+              bottom: 14px;
+              right: 10px;
+              background: url(./images/play-icon.png) no-repeat center/contain;
+            }
+          }
+          .info {
+            width: 149px;
+            box-sizing: border-box;
+            background: #f2f2f5;
+            position: relative;
+            padding: 8px 10px 9px;
+            .info-title {
+              font-weight: 500;
+              font-size: 14px;
+              color: #333333;
+            }
+            .text {
+              font-size: 12px;
+              color: #808080;
+            }
+            .option {
+              position: absolute;
+              bottom: 9px;
+              right: 9px;
+              display: flex;
+              align-items: center;
+              .praised-icon {
+                width: 12px;
+                height: 13px;
+                background: url(./images/praised.png) no-repeat center/contain;
+                display: inline-block;
+                margin-right: 4px;
+              }
+              a {
+                font-size: 12px;
+                color: #333333;
+                text-decoration: none;
+              }
+              em {
+                border-left: 1px solid #d9d9d9;
+                height: 14px;
+                margin: 0 7px;
+              }
+            }
+          }
+        }
+      }
+      .more {
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .text {
+          font-size: 12px;
+          color: #333;
+          margin-right: 4px;
+        }
+        .right-icon {
+          width: 4px;
+          height: 7px;
+          background: url(./images/arrow-right.png) no-repeat center/contain;
+        }
+      }
+    }
+  }
+}

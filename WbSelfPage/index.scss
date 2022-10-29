@@ -1,0 +1,44 @@
+@import './header.scss';
+@import './banner.scss';
+@import './left.scss';
+@import './right.scss';
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* 浏览器都有自己的默认样式，以上部分为清除浏览器默认样式 */
+
+.container {
+  background: #5e7aa1 url(./images/body_bg_page.jpg) no-repeat center
+    top/contain;
+  padding-top: 30px;
+
+  main {
+    width: 920px;
+    margin: 15px auto 0 auto;
+    padding-bottom: 165px;
+    display: flex;
+  }
+}
